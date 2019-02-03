@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+Welcome to Simple
+
+<br/>
+
+    <div class="jumbotron">
+      <p>  Simple helps you get your dream jobs without having to scroll through hundreds of jobs </p>
+    </div>
+
+<!--<img src="{% static 'images/banner.png' %}"> -->
+
+{{ introduction }}
+
+<br/>
+<br/>
+
+<div class="container">
+	<div class="row justify-content-center align-items-center">
+		<div class="form-group">
+			<input type="text" class="form-control" placeholder="JobTitle" aria-label="JobTitle" aria-describedby="basic-addon1">
+		</div>
+	</div>
+	<div class="row justify-content-center align-items-center">
+		<div class="form-group">
+			<input type="text" class="form-control" placeholder="Location" aria-label="Location" aria-describedby="basic-addon1">
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class ="col text-center">
+			<button type="submit" class="btn btn-success btn-lg">Get Matches </button>
+		</div>
+	</div>
+</div>
+{% endblock %}
